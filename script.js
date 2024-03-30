@@ -10,8 +10,12 @@ let products = [];
         code,
         stock 
     }
+    
 
-    if 
+    if(Object.values(newProduct).includes(undefined)){
+        console.log("Todos los campos son obligatorios");
+        return;
+    }
 
     const productExists = products.find(product => product.code === code);
 
@@ -30,14 +34,12 @@ let products = [];
  }
 
  const getProductById = (id) => {
-
+    const product = products.find(product => product.id === id);
+    if (!product){
+        console.log(`No se encontro el producto con el id ${id}`);
+        return;
+    } 
+    console.log(product);
+    return product;
  }
-
-//test
-
-
-
-addProduct("computer", "black computer", 500, "computerPicture", 123, 4);
-addProduct("mouse", "black mouse", 500, "mousePicture", 234, 4);
-getProducts();
 
