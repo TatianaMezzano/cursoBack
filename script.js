@@ -1,6 +1,10 @@
-let products = [];
+const { path } = require("express/lib/application");
+const fs = require("fs");
 
- const addProduct = (title, description, price, thumbnail, code, stock) => {
+let products = [];
+let pathFile = "./products.json";
+
+ const addProduct = async (title, description, price, thumbnail, code, stock) => {
     const newProduct = {
         id: products.length > 0  ? products[products.length-1].id + 1 : 1,
         title,
@@ -25,12 +29,15 @@ let products = [];
     }  
 
     products.push(newProduct);
+
+    await fs.promises.writeFile(pathFile, JSON.stringify(products));
     
  }
 
- const getProducts = () => {
+ const getProducts = async () => {
+    const productsJson = await fs.promise.readFile(path, "utf8");
+    products = JSON.parse(productsJson) || [];
     console.log(products);
-    return products;
  }
 
  const getProductById = (id) => {
