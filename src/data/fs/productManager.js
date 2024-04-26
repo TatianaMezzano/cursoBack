@@ -1,5 +1,4 @@
-const { path } = require("express/lib/application");
-const fs = require("fs");
+import fs from "fs";
 
 let products = [];
 let pathFile = "./products.json";
@@ -34,10 +33,16 @@ let pathFile = "./products.json";
     
  }
 
- const getProducts = async () => {
-    const productsJson = await fs.promise.readFile(path, "utf8");
+ const getProducts = async (limit) => {
+    const productsJson = await fs.promises.readFile(pathFile, "utf8");
     products = JSON.parse(productsJson) || [];
+
+    if (limit && limit > 0) {
+        products = products.slice(0, limit);
+    }
+
     console.log(products);
+    return products;
  }
 
  const getProductById = async (id) => {
@@ -68,3 +73,5 @@ const deleteProduct = async (id) => {
 
     await fs.promises.writeFile(pathFile, JSON.stringify(products));
 }
+
+export {addProduct, getProducts, getProductById, updateProduct, deleteProduct};

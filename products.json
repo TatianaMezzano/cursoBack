@@ -1,0 +1,93 @@
+[
+    {
+      "id":1,
+      "title": "Camiseta básica",
+      "description": "Camiseta de algodón de manga corta",
+      "price": 15.99,
+      "thumbnail": "https://example.com/camiseta.jpg",
+      "code": "CTB001",
+      "stock": 50
+    },
+    {
+      "id":2,
+      "title": "Jeans ajustados",
+      "description": "Pantalones vaqueros ajustados de color azul",
+      "price": 29.99,
+      "thumbnail": "https://example.com/jeans.jpg",
+      "code": "JAJ002",
+      "stock": 30
+    },
+    {
+      "id":3,
+      "title": "Vestido floral",
+      "description": "Vestido estampado con flores",
+      "price": 39.99,
+      "thumbnail": "https://example.com/vestido.jpg",
+      "code": "VFL003",
+      "stock": 20
+    },
+    {
+      "id":4,
+      "title": "Sudadera con capucha",
+      "description": "Sudadera cómoda con capucha",
+      "price": 45.50,
+      "thumbnail": "https://example.com/sudadera.jpg",
+      "code": "SDC004",
+      "stock": 25
+    },
+    {
+      "id":5,
+      "title": "Zapatillas deportivas",
+      "description": "Zapatillas deportivas para correr",
+      "price": 59.99,
+      "thumbnail": "https://example.com/zapatillas.jpg",
+      "code": "ZDE005",
+      "stock": 15
+    },
+    {
+      "id":6,
+      "title": "Bufanda de lana",
+      "description": "Bufanda suave de lana",
+      "price": 19.99,
+      "thumbnail": "https://example.com/bufanda.jpg",
+      "code": "BLA006",
+      "stock": 40
+    },
+    {
+      "id":7,
+      "title": "Chaqueta de cuero",
+      "description": "Chaqueta de cuero genuino",
+      "price": 99.99,
+      "thumbnail": "https://example.com/chaqueta.jpg",
+      "code": "CCU007",
+      "stock": 10
+    },
+    {
+      "id":8,
+      "title": "Pantalones cortos",
+      "description": "Pantalones cortos de estilo casual",
+      "price": 25.50,
+      "thumbnail": "https://example.com/pantalones.jpg",
+      "code": "PCT008",
+      "stock": 35
+    },
+    {
+      "id":9,
+      "title": "Jersey de punto",
+      "description": "Jersey de punto cálido",
+      "price": 34.99,
+      "thumbnail": "https://example.com/jersey.jpg",
+      "code": "JDP009",
+      "stock": 20
+    },
+    {
+      "id":10,
+      "title": "Sombrero de paja",
+      "description": "Sombrero de paja trenzado",
+      "price": 12.99,
+      "thumbnail": "https://example.com/sombrero.jpg",
+      "code": "SPA010",
+      "stock": 50
+    }
+  ]
+  
