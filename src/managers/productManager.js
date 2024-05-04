@@ -1,9 +1,12 @@
 import fs from "fs";
 
 let products = [];
-let pathFile = "./products.json";
+let pathFile = "/src/data/products.json";
 
- const addProduct = async (title, description, price, thumbnail, code, stock) => {
+ const addProduct = async (product) => {
+    
+    const {title, description, price, thumbnail, code, stock} = product;
+    
     const newProduct = {
         id: products.length > 0  ? products[products.length-1].id + 1 : 1,
         title,
@@ -11,7 +14,8 @@ let pathFile = "./products.json";
         price,
         thumbnail,
         code,
-        stock 
+        stock,
+        status : true
     }
     
 
@@ -29,7 +33,7 @@ let pathFile = "./products.json";
 
     products.push(newProduct);
 
-    await fs.promises.writeFile(pathFile, JSON.stringify(products));
+    await fs.promises.appendFile(pathFile, JSON.stringify(products));
     
  }
 
@@ -55,17 +59,21 @@ let pathFile = "./products.json";
     console.log(product);
     return product;
  }
-
-const updateProduct = async (id, dataProduct) => {
-    await getProducts();
-    const index = products.findIndex(product => product.id === id );
-    products[index] = {
-        ...products[index],
-        ...dataProduct
-     }
-
-     await fs.promises.writeFile(pathFile, JSON.stringify(products));
+ const updateProduct = async (id, dataProduct) => {
+    let products = await getProducts(); // Obtener la lista de productos
+    const index = products.findIndex(product => product.id === id);
+    if (index !== -1) {
+        // Si el producto existe, actualizarlo
+        products[index] = {
+            ...products[index],
+            ...dataProduct
+        };
+        await fs.promises.writeFile(pathFile, JSON.stringify(products));
+    } else {
+        throw new Error("Product not found"); // Lanzar un error si el producto no se encuentra
+    }
 }
+
 
 const deleteProduct = async (id) => {
     await getProducts();

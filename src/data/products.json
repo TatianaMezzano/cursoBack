@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Camisa de manga larga",
+    "description": "Camisa de vestir de color blanco con botones y cuello clásico.",
+    "price": 29.99,
+    "thumbnail": "https://ejemplo.com/camisa.jpg",
+    "code": "CM001",
+    "stock": 50
+  },
+  {
+    "id": 2,
+    "title": "pantalones",
+    "description": "Jeans de mezclilla azul con estilo ajustado y detalles desgastados.",
+    "price": 39.99,
+    "thumbnail": "https://ejemplo.com/pantalones.jpg",
+    "code": "PN002",
+    "stock": 30
+  },
+  {
+    "id": 3,
+    "title": "Vestido estampado floral",
+    "description": "Vestido corto con estampado de flores y cinturón ajustable.",
+    "price": 49.99,
+    "thumbnail": "https://ejemplo.com/vestido.jpg",
+    "code": "VD003",
+    "stock": 25
+  },
+  {
+    "id": 4,
+    "title": "Chaqueta de cuero",
+    "description": "Chaqueta de piel sintética con cierre de cremallera y bolsillos laterales.",
+    "price": 79.99,
+    "thumbnail": "https://ejemplo.com/chaqueta.jpg",
+    "code": "CH004",
+    "stock": 60
+  },
+  {
+    "id": 5,
+    "title": "Sudadera con capucha",
+    "description": "Sudadera informal con capucha y bolsillo delantero tipo canguro.",
+    "price": 34.99,
+    "thumbnail": "https://ejemplo.com/sudadera.jpg",
+    "code": "SD005",
+    "stock": 40
+  },
+  {
+    "id": 6,
+    "title": "Falda plisada",
+    "description": "Falda corta plisada de color negro con cintura elástica.",
+    "price": 24.99,
+    "thumbnail": "https://ejemplo.com/falda.jpg",
+    "code": "FK006",
+    "stock": 20
+  },
+  {
+    "id": 7,
+    "title": "Blazer de lana",
+    "description": "Blazer formal de lana con botones frontales y bolsillos con solapa.",
+    "price": 59.99,
+    "thumbnail": "https://ejemplo.com/blazer.jpg",
+    "code": "BZ007",
+    "stock": 35
+  },
+  {
+    "id": 8,
+    "title": "Jersey de punto",
+    "description": "Jersey de punto grueso con cuello redondo y patrón de trenzas.",
+    "price": 44.99,
+    "thumbnail": "https://ejemplo.com/jersey.jpg",
+    "code": "JR008",
+    "stock": 55
+  },
+  {
+    "id": 9,
+    "title": "Polo de manga corta",
+    "description": "Polo clásico de manga corta con rayas horizontales y logo bordado.",
+    "price": 19.99,
+    "thumbnail": "https://ejemplo.com/polo.jpg",
+    "code": "PL009",
+    "stock": 45
+  },
+  {
+    "id": 10,
+    "title": "Abrigo de invierno",
+    "description": "Abrigo acolchado de invierno con capucha desmontable y bolsillos con cremallera.",
+    "price": 89.99,
+    "thumbnail": "https://ejemplo.com/abrigo.jpg",
+    "code": "AB010",
+    "stock": 65
+  }
+]
